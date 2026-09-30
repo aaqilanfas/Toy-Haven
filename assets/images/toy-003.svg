@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="prismLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="url(#bgRainbow)"/>
+  <!-- Incoming White Light Ray -->
+  <line x1="50" y1="260" x2="245" y2="240" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <!-- Glass Optical Prism Triangle -->
+  <polygon points="260,110 350,290 170,290" fill="#60a5fa" fill-opacity="0.3" stroke="#93c5fd" stroke-width="5"/>
+  <polygon points="260,110 350,290 320,310 170,290" fill="#ffffff" fill-opacity="0.15"/>
+  <!-- Rainbow Dispersion Beam -->
+  <path d="M305 200 L560 120 L560 145 L310 207 Z" fill="#ef4444"/>
+  <path d="M310 207 L560 145 L560 170 L315 214 Z" fill="#f97316"/>
+  <path d="M315 214 L560 170 L560 195 L320 221 Z" fill="#eab308"/>
+  <path d="M320 221 L560 195 L560 220 L325 228 Z" fill="#22c55e"/>
+  <path d="M325 228 L560 220 L560 245 L330 235 Z" fill="#06b6d4"/>
+  <path d="M330 235 L560 245 L560 270 L335 242 Z" fill="#3b82f6"/>
+  <path d="M335 242 L560 270 L560 295 L340 250 Z" fill="#a855f7"/>
+  <!-- Craft Jars & Sparkle Elements -->
+  <g transform="translate(100, 340)">
+    <rect x="0" y="15" width="45" height="55" rx="8" fill="#f43f5e"/>
+    <rect x="5" y="5" width="35" height="12" rx="4" fill="#e2e8f0"/>
+    <rect x="65" y="15" width="45" height="55" rx="8" fill="#eab308"/>
+    <rect x="70" y="5" width="35" height="12" rx="4" fill="#e2e8f0"/>
+    <rect x="130" y="15" width="45" height="55" rx="8" fill="#3b82f6"/>
+    <rect x="135" y="5" width="35" height="12" rx="4" fill="#e2e8f0"/>
+  </g>
+  <!-- Sparkles -->
+  <path d="M470 340 L475 355 L490 360 L475 365 L470 380 L465 365 L450 360 L465 355 Z" fill="#fef08a"/>
+  <path d="M210 90 L213 100 L223 103 L213 106 L210 116 L207 106 L197 103 L207 100 Z" fill="#fef08a"/>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#fbcfe8" opacity="0.8">TOYS Â· RAINBOW MAKER SET</text>
+</svg>

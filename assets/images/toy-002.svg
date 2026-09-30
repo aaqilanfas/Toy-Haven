@@ -1,0 +1,46 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDino" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="50%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="url(#bgDino)"/>
+  <!-- Stone Excavation Slab -->
+  <rect x="80" y="100" width="440" height="280" rx="28" fill="#d97706" stroke="#92400e" stroke-width="8"/>
+  <rect x="100" y="120" width="400" height="240" rx="20" fill="#b45309"/>
+  <!-- T-Rex Fossil Embedded in Stone -->
+  <g fill="#fef3c7" stroke="#78350f" stroke-width="3">
+    <!-- Skull -->
+    <path d="M190 240 C170 180 230 160 330 170 C370 175 410 200 410 230 C380 240 360 235 340 250 C320 260 280 270 230 260 Z"/>
+    <!-- Eye Socket -->
+    <ellipse cx="280" cy="205" rx="22" ry="16" fill="#78350f"/>
+    <!-- Snout Cavity -->
+    <ellipse cx="365" cy="200" rx="14" ry="8" fill="#78350f"/>
+    <!-- Sharp Teeth -->
+    <polygon points="340,240 345,255 352,240"/>
+    <polygon points="356,238 361,252 368,238"/>
+    <polygon points="372,235 377,248 384,235"/>
+    <polygon points="388,230 393,243 400,230"/>
+    <!-- Lower Jaw -->
+    <path d="M220 270 C280 270 330 265 380 255 L380 275 C310 290 250 290 220 270 Z"/>
+    <!-- Bone Fragment Details -->
+    <ellipse cx="160" cy="210" rx="25" ry="10"/>
+    <ellipse cx="140" cy="250" rx="20" ry="9"/>
+  </g>
+  <!-- Excavation Tools: Hammer & Brush -->
+  <!-- Brush -->
+  <g transform="translate(380, 270) rotate(-35)">
+    <rect x="0" y="0" width="16" height="130" rx="6" fill="#e2e8f0"/>
+    <rect x="-4" y="110" width="24" height="40" rx="4" fill="#ca8a04"/>
+    <path d="M-4 150 L20 150 L24 175 L-8 175 Z" fill="#fef08a"/>
+  </g>
+  <!-- Geologist Chisel Hammer -->
+  <g transform="translate(100, 260) rotate(30)">
+    <rect x="25" y="0" width="16" height="160" rx="6" fill="#94a3b8"/>
+    <rect x="0" y="10" width="66" height="24" rx="4" fill="#334155"/>
+    <polygon points="0,10 -15,22 0,34" fill="#64748b"/>
+  </g>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#fef3c7" opacity="0.8">TOYS Â· DINO DIG DISCOVERY KIT</text>
+</svg>

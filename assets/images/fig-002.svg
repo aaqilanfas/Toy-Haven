@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgForest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="60%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="natureGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a7f3d0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="url(#bgForest)"/>
+  <circle cx="300" cy="220" r="170" fill="url(#natureGlow)"/>
+  <!-- Mossy Mound Base -->
+  <ellipse cx="300" cy="440" rx="240" ry="55" fill="#064e3b"/>
+  <ellipse cx="300" cy="430" rx="210" ry="42" fill="#047857"/>
+  <!-- Fantasy Guardian Body -->
+  <!-- Cloak -->
+  <path d="M220 230 C220 180 380 180 380 230 L400 410 C340 430 260 430 200 410 Z" fill="#065f46"/>
+  <!-- Tunic / Body -->
+  <rect x="255" y="210" width="90" height="170" rx="26" fill="#78350f"/>
+  <rect x="270" y="260" width="60" height="110" rx="14" fill="#92400e"/>
+  <!-- Belt & Golden Leaf Buckle -->
+  <rect x="250" y="295" width="100" height="18" rx="6" fill="#451a03"/>
+  <circle cx="300" cy="304" r="14" fill="#fbbf24"/>
+  <path d="M296 298 C306 298 306 310 300 312 C294 310 294 298 296 298 Z" fill="#15803d"/>
+  <!-- Head & Antlers / Horns -->
+  <circle cx="300" cy="145" r="48" fill="#d97706"/>
+  <!-- Antlers / Branches -->
+  <path d="M270 120 C240 80 220 90 200 65 M245 95 C230 75 240 60 230 45" stroke="#fef08a" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M330 120 C360 80 380 90 400 65 M355 95 C370 75 360 60 370 45" stroke="#fef08a" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Face Details -->
+  <circle cx="282" cy="142" r="6" fill="#064e3b"/>
+  <circle cx="318" cy="142" r="6" fill="#064e3b"/>
+  <circle cx="284" cy="140" r="2" fill="#ffffff"/>
+  <circle cx="320" cy="140" r="2" fill="#ffffff"/>
+  <path d="M290 162 C296 168 304 168 310 162" stroke="#451a03" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Magical Staff -->
+  <rect x="180" y="110" width="14" height="310" rx="7" fill="#b45309"/>
+  <circle cx="187" cy="100" r="26" fill="#6ee7b7" opacity="0.6"/>
+  <polygon points="187,75 202,100 187,125 172,100" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#a7f3d0" opacity="0.7">FIGURINES Â· FOREST GUARDIAN</text>
+</svg>

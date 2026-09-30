@@ -1,0 +1,178 @@
+[
+  {
+    "id": "fig-001",
+    "name": "Cosmic Explorer",
+    "category": "Figurines",
+    "price": 24.99,
+    "rating": 4.9,
+    "badge": "New",
+    "description": "A poseable space explorer figurine with a transparent helmet and tiny rover companion.",
+    "features": ["Poseable joints", "Rover accessory", "Collector display base"],
+    "image": "assets/images/fig-001.svg"
+  },
+  {
+    "id": "fig-002",
+    "name": "Forest Guardian",
+    "category": "Figurines",
+    "price": 19.5,
+    "rating": 4.7,
+    "badge": "Popular",
+    "description": "A hand-painted woodland guardian for fantasy shelves, dioramas, and imaginative play.",
+    "features": ["Hand-painted finish", "Fantasy scale", "Gift-ready box"],
+    "image": "assets/images/fig-002.svg"
+  },
+  {
+    "id": "fig-003",
+    "name": "Retro Robot Buddy",
+    "category": "Figurines",
+    "price": 16.0,
+    "rating": 4.6,
+    "badge": "Classic",
+    "description": "A cheerful retro robot with a bright enamel finish and a head that swivels.",
+    "features": ["Swivel head", "Enamel details", "Desk-friendly size"],
+    "image": "assets/images/fig-003.svg"
+  },
+  {
+    "id": "fig-004",
+    "name": "Cyber Ninja Ronin",
+    "category": "Figurines",
+    "price": 21.99,
+    "rating": 4.8,
+    "badge": "Special",
+    "description": "A stealth cyber warrior figurine with an illuminated neon visor and dual katana swords.",
+    "features": ["Glow-in-the-dark visor", "Detachable katana blades", "Articulated stance"],
+    "image": "assets/images/fig-004.svg"
+  },
+  {
+    "id": "toy-001",
+    "name": "Build-It City Blocks",
+    "category": "Toys",
+    "price": 31.99,
+    "rating": 4.8,
+    "badge": "Bestseller",
+    "description": "A bright construction set for building streets, towers, arches, and stories from scratch.",
+    "features": ["120 solid wood pieces", "Reusable storage tub", "Non-toxic organic paint"],
+    "image": "assets/images/toy-001.svg"
+  },
+  {
+    "id": "toy-002",
+    "name": "Dino Dig Discovery Kit",
+    "category": "Toys",
+    "price": 22.75,
+    "rating": 4.5,
+    "badge": "Explore",
+    "description": "A hands-on excavation kit with fossil stone blocks, steel tools, and a full-colour dino guide.",
+    "features": ["Three authentic fossil replicas", "Hammer and chisel set", "Full-colour fact booklet"],
+    "image": "assets/images/toy-002.svg"
+  },
+  {
+    "id": "toy-003",
+    "name": "Rainbow Maker Set",
+    "category": "Toys",
+    "price": 18.25,
+    "rating": 4.4,
+    "badge": "Creative",
+    "description": "An optical prism craft set that casts bright rainbows and turns afternoons into creative experiments.",
+    "features": ["Optical glass prism", "12 colourful craft pigments", "Sunlight reflection guide"],
+    "image": "assets/images/toy-003.svg"
+  },
+  {
+    "id": "toy-004",
+    "name": "Solar Power Mars Rover",
+    "category": "Toys",
+    "price": 28.5,
+    "rating": 4.9,
+    "badge": "STEM Pick",
+    "description": "A build-your-own motorized planetary rover that drives outdoors using real solar power cells.",
+    "features": ["Functional mini solar panel", "6-wheel rocker-bogie suspension", "No batteries required"],
+    "image": "assets/images/toy-004.svg"
+  },
+  {
+    "id": "game-001",
+    "name": "Moon Base Mission",
+    "category": "Board Games",
+    "price": 34.99,
+    "rating": 4.9,
+    "badge": "Staff Pick",
+    "description": "Work together with fellow crew members to establish a lunar outpost before solar storms arrive.",
+    "features": ["Co-operative strategy", "2–5 players", "45 minute sessions"],
+    "image": "assets/images/game-001.svg"
+  },
+  {
+    "id": "game-002",
+    "name": "Garden Party",
+    "category": "Board Games",
+    "price": 27.5,
+    "rating": 4.6,
+    "badge": "Family",
+    "description": "Draft vibrant flower tiles, attract honeybees, and arrange the most colourful garden in town.",
+    "features": ["Easy to learn rules", "2–4 players", "Wooden meeple tokens included"],
+    "image": "assets/images/game-002.svg"
+  },
+  {
+    "id": "game-003",
+    "name": "Mystery at Maple Manor",
+    "category": "Board Games",
+    "price": 39.0,
+    "rating": 4.8,
+    "badge": "Detective",
+    "description": "Inspect clues, question quirky suspects, and deduce the secret room in this cosy Victorian mystery.",
+    "features": ["Story-driven mystery", "Magnifying glass & clue files", "Replayable case folders"],
+    "image": "assets/images/game-003.svg"
+  },
+  {
+    "id": "game-004",
+    "name": "Dragon Castle Quest",
+    "category": "Board Games",
+    "price": 36.0,
+    "rating": 4.7,
+    "badge": "Adventure",
+    "description": "Embark on an epic fantasy fortress siege with miniature hero tokens, dice rolls, and dragon treasure.",
+    "features": ["Modular 3D fortress board", "Ruby dragon miniature", "Ages 10+ / 60 mins"],
+    "image": "assets/images/game-004.svg"
+  },
+  {
+    "id": "car-001",
+    "name": "1967 Sunset Mustang",
+    "category": "Diecast Cars",
+    "price": 29.99,
+    "rating": 4.9,
+    "badge": "Collector",
+    "description": "A detailed 1:24 diecast American classic with opening doors, chrome trim, and a sunset paint finish.",
+    "features": ["1:24 precision scale", "Opening hood and doors", "Heavyweight diecast metal body"],
+    "image": "assets/images/car-001.svg"
+  },
+  {
+    "id": "car-002",
+    "name": "City Sprint GT",
+    "category": "Diecast Cars",
+    "price": 21.0,
+    "rating": 4.5,
+    "badge": "Speed",
+    "description": "An aerodynamic modern GT racer designed with aggressive spoilers, alloy rims, and sleek curves.",
+    "features": ["1:32 scale", "High-speed pull-back mechanism", "Gloss metallic finish"],
+    "image": "assets/images/car-002.svg"
+  },
+  {
+    "id": "car-003",
+    "name": "Rally Trailblazer",
+    "category": "Diecast Cars",
+    "price": 26.5,
+    "rating": 4.7,
+    "badge": "Offroad",
+    "description": "A rugged 4x4 rally truck with roof-mounted spare tire, chunky all-terrain rubber tread, and decals.",
+    "features": ["All-terrain deep rubber tyres", "Functional spring suspension", "Dakar rally decals"],
+    "image": "assets/images/car-003.svg"
+  },
+  {
+    "id": "car-004",
+    "name": "Vintage Pickup 1955",
+    "category": "Diecast Cars",
+    "price": 24.5,
+    "rating": 4.8,
+    "badge": "Retro",
+    "description": "A charming retro seafoam green pickup truck with real wood-finish bed rails and whitewall tires.",
+    "features": ["1:28 scale", "Real wooden bed rails", "Classic whitewall tyres"],
+    "image": "assets/images/car-004.svg"
+  }
+]

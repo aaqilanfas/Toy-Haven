@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none">
+  <!-- Toy Icon Graphic -->
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b57" />
+      <stop offset="100%" stop-color="#ff8e72" />
+    </linearGradient>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066" />
+      <stop offset="100%" stop-color="#ffc857" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(2, 2)">
+    <!-- Toy Head Body -->
+    <rect x="0" y="8" width="40" height="38" rx="12" fill="url(#logoBg)" filter="drop-shadow(0 2px 4px rgba(223, 79, 62, 0.25))"/>
+    
+    <!-- Antenna -->
+    <rect x="18" y="2" width="4" height="7" rx="2" fill="#ffc857" />
+    <circle cx="20" cy="2" r="3.5" fill="url(#starGrad)" />
+
+    <!-- Cute Eyes -->
+    <ellipse cx="14" cy="24" rx="4.5" ry="5" fill="#ffffff"/>
+    <circle cx="15" cy="24" r="2.5" fill="#16324f"/>
+    <circle cx="16" cy="22.5" r="1" fill="#ffffff"/>
+
+    <ellipse cx="26" cy="24" rx="4.5" ry="5" fill="#ffffff"/>
+    <circle cx="27" cy="24" r="2.5" fill="#16324f"/>
+    <circle cx="28" cy="22.5" r="1" fill="#ffffff"/>
+
+    <!-- Cheeks -->
+    <circle cx="9" cy="28" r="2" fill="#ffc857" opacity="0.8"/>
+    <circle cx="31" cy="28" r="2" fill="#ffc857" opacity="0.8"/>
+
+    <!-- Happy Smile -->
+    <path d="M14 32c3 4 9 4 12 0" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(54, 30)">
+    <text font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5">
+      <tspan fill="#16324f">Toy</tspan>
+      <tspan fill="#ff6b57"> Haven</tspan>
+    </text>
+    <!-- Little Star Accent -->
+    <path d="M136 -12 L138 -6 L144 -4 L138 -2 L136 4 L134 -2 L128 -4 L134 -6 Z" fill="#ffc857"/>
+    <!-- Subtitle / Tagline -->
+    <text y="14" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="9" fill="#557087" letter-spacing="1.5">PLAY &amp; COLLECT</text>
+  </g>
+</svg>

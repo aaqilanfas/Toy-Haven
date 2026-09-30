@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSprint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="blueGT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="url(#bgSprint)"/>
+  <!-- City Neon Lights -->
+  <line x1="0" y1="380" x2="600" y2="380" stroke="#38bdf8" stroke-width="3" opacity="0.5"/>
+  <ellipse cx="300" cy="385" rx="240" ry="22" fill="#020617" opacity="0.8"/>
+  <!-- Modern GT Aerodynamic Sports Car -->
+  <g transform="translate(60, 210)">
+    <!-- Big GT Rear Wing / Spoiler -->
+    <rect x="25" y="40" width="10" height="40" fill="#0f172a"/>
+    <path d="M10 40 L65 40 L55 30 L0 30 Z" fill="#0f172a"/>
+    <!-- Sleek Canopy -->
+    <path d="M140 60 L210 20 L310 20 L380 60 Z" fill="#0284c7" stroke="#38bdf8" stroke-width="3"/>
+    <path d="M190 28 L290 28 L350 55 L160 55 Z" fill="#0f172a"/>
+    <!-- Aerodynamic Chassis -->
+    <path d="M30 90 C30 65 120 60 160 60 L370 60 C420 60 480 80 475 110 L460 135 C400 135 380 105 340 105 C300 105 280 135 210 135 C160 135 140 105 100 105 C60 105 40 135 25 135 Z" fill="url(#blueGT)" stroke="#7dd3fc" stroke-width="2"/>
+    <!-- Neon Underglow -->
+    <line x1="120" y1="135" x2="330" y2="135" stroke="#38bdf8" stroke-width="6" opacity="0.8"/>
+    <!-- LED Headlight -->
+    <polygon points="460,90 475,98 460,105" fill="#f0fdf4" filter="drop-shadow(2px 0 6px #22c55e)"/>
+    <!-- Wheels -->
+    <g transform="translate(345, 130)">
+      <circle cx="0" cy="0" r="36" fill="#0f172a"/>
+      <circle cx="0" cy="0" r="24" fill="#334155" stroke="#38bdf8" stroke-width="3"/>
+      <circle cx="0" cy="0" r="8" fill="#f8fafc"/>
+    </g>
+    <g transform="translate(105, 130)">
+      <circle cx="0" cy="0" r="36" fill="#0f172a"/>
+      <circle cx="0" cy="0" r="24" fill="#334155" stroke="#38bdf8" stroke-width="3"/>
+      <circle cx="0" cy="0" r="8" fill="#f8fafc"/>
+    </g>
+  </g>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#38bdf8" opacity="0.8">DIECAST CARS Â· CITY SPRINT GT</text>
+</svg>

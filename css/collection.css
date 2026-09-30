@@ -1,0 +1,148 @@
+.collection-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.collection-count {
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--mint);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.collection-filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.col-filter-btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.col-filter-btn:hover {
+  border-color: var(--yellow);
+  background: #fffdf5;
+  color: var(--ink);
+}
+
+.col-filter-btn.active {
+  background: var(--yellow);
+  color: var(--ink);
+  border-color: var(--yellow);
+  box-shadow: 0 4px 12px rgba(255, 200, 87, 0.3);
+}
+
+.collection-card {
+  display: grid;
+  grid-template-columns: 140px;
+  gap: 1.25rem;
+  padding: 2.15rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(22, 50, 79, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(22, 50, 79, 0.08);
+}
+
+.collection-card-image-wrap {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f1f5f9;
+  border: 1px solid var(--line);
+}
+
+.collection-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-card-image-wrap .product-badge {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.65rem;
+}
+
+.collection-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-card-content h3 {
+  margin: 0.2rem 0;
+  font-size: 1.15rem;
+}
+
+.collection-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.collection-status {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f8fafc;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.collection-remove-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fee2e2;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.collection-remove-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (min-width: 768px) {
+  .collection-card {
+    grid-template-columns: 130px 1fr;
+  }
+
+  .collection-card-image-wrap {
+    width: 130px;
+    height: 130px;
+  }
+}

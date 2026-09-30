@@ -1,0 +1,32 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="#090d16"/>
+  <!-- Isometric Hex Board -->
+  <g transform="translate(300, 240)">
+    <!-- Base Plate -->
+    <polygon points="0,-160 220,-40 220,120 0,200 -220,120 -220,-40" fill="#1e293b" stroke="#38bdf8" stroke-width="4"/>
+    <!-- Grid Tiles -->
+    <polygon points="0,-120 70,-80 70,0 0,40 -70,0 -70,-80" fill="#0284c7" stroke="#bae6fd" stroke-width="2"/>
+    <polygon points="80,-70 150,-30 150,50 80,90 10,50 10,-30" fill="#059669" stroke="#a7f3d0" stroke-width="2"/>
+    <polygon points="-80,-70 -10,-30 -10,50 -80,90 -150,50 -150,-30" fill="#d97706" stroke="#fde68a" stroke-width="2"/>
+    <polygon points="0,50 70,90 70,170 0,210 -70,170 -70,90" fill="#7c3aed" stroke="#ddd6fe" stroke-width="2" transform="translate(0, -30)"/>
+    <!-- Miniature Rocket / Base Modules -->
+    <rect x="-14" y="-50" width="28" height="55" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="3"/>
+    <polygon points="-14,-50 0,-75 14,-50" fill="#ef4444"/>
+    <!-- Resource Crystals -->
+    <polygon points="90,10 105,-15 120,10 105,35" fill="#38bdf8"/>
+    <polygon points="-100,10 -85,-15 -70,10 -85,35" fill="#fbbf24"/>
+  </g>
+  <!-- Dice -->
+  <rect x="70" y="340" width="55" height="55" rx="12" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="85" cy="355" r="4.5" fill="#ffffff"/>
+  <circle cx="110" cy="380" r="4.5" fill="#ffffff"/>
+  <circle cx="97" cy="367" r="4.5" fill="#ffffff"/>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#38bdf8" opacity="0.8">BOARD GAMES Â· MOON BASE MISSION</text>
+</svg>

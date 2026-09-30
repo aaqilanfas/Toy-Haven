@@ -1,0 +1,35 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPickup" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#99f6e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="20" fill="url(#bgPickup)"/>
+  <!-- Shadow Base -->
+  <ellipse cx="300" cy="400" rx="230" ry="24" fill="#134e4a" opacity="0.5"/>
+  <!-- Classic 1955 Vintage Pickup -->
+  <g transform="translate(60, 190)">
+    <!-- Wooden Truck Bed Rails -->
+    <rect x="40" y="45" width="130" height="8" rx="2" fill="#b45309"/>
+    <rect x="40" y="60" width="130" height="8" rx="2" fill="#b45309"/>
+    <!-- Cab -->
+    <path d="M170 85 C175 40 220 25 270 25 L320 25 C350 25 370 50 380 85 Z" fill="#0d9488" stroke="#5eead4" stroke-width="3"/>
+    <ellipse cx="270" cy="55" rx="65" ry="22" fill="#f0fdfa"/>
+    <!-- Body & Fenders -->
+    <path d="M25 85 L440 85 C460 85 475 105 465 130 L450 145 C400 145 380 110 340 110 C300 110 280 145 200 145 C150 145 130 110 90 110 C50 110 30 145 15 145 Z" fill="#14b8a6" stroke="#ccfbf1" stroke-width="3"/>
+    <!-- Whitewall Vintage Wheels -->
+    <g transform="translate(345, 140)">
+      <circle cx="0" cy="0" r="38" fill="#134e4a"/>
+      <circle cx="0" cy="0" r="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="14" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+    </g>
+    <g transform="translate(105, 140)">
+      <circle cx="0" cy="0" r="38" fill="#134e4a"/>
+      <circle cx="0" cy="0" r="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="0" cy="0" r="14" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+    </g>
+  </g>
+  <text x="30" y="470" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#134e4a" opacity="0.8">DIECAST CARS Â· VINTAGE PICKUP 1955</text>
+</svg>

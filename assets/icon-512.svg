@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf4" />
+      <stop offset="100%" stop-color="#ffece6" />
+    </linearGradient>
+    <linearGradient id="head512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b57" />
+      <stop offset="100%" stop-color="#df4f3e" />
+    </linearGradient>
+    <linearGradient id="star512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066" />
+      <stop offset="100%" stop-color="#ffc857" />
+    </linearGradient>
+  </defs>
+
+  <!-- App Icon Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg512)" stroke="#ffd7cf" stroke-width="6"/>
+
+  <!-- Antenna -->
+  <rect x="236" y="64" width="40" height="74" rx="20" fill="#ffc857" />
+  <circle cx="256" cy="64" r="38" fill="url(#star512)" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.15))"/>
+
+  <!-- Robot Head Box -->
+  <rect x="76" y="128" width="360" height="310" rx="96" fill="url(#head512)" filter="drop-shadow(0 20px 40px rgba(22, 50, 79, 0.22))"/>
+
+  <!-- Eyes Outer -->
+  <ellipse cx="180" cy="260" rx="42" ry="48" fill="#ffffff"/>
+  <circle cx="186" cy="260" r="24" fill="#16324f"/>
+  <circle cx="196" cy="250" r="10" fill="#ffffff"/>
+
+  <ellipse cx="332" cy="260" rx="42" ry="48" fill="#ffffff"/>
+  <circle cx="338" cy="260" r="24" fill="#16324f"/>
+  <circle cx="348" cy="250" r="10" fill="#ffffff"/>
+
+  <!-- Cheeks -->
+  <circle cx="128" cy="310" r="22" fill="#ffc857" opacity="0.9"/>
+  <circle cx="384" cy="310" r="22" fill="#ffc857" opacity="0.9"/>
+
+  <!-- Smile -->
+  <path d="M192 346c22 38 106 38 128 0" stroke="#ffffff" stroke-width="20" stroke-linecap="round" fill="none"/>
+</svg>
