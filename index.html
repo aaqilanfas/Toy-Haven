@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Toy Haven is a playful online collection of figurines, toys, board games and diecast cars.">
+    <meta name="theme-color" content="#ff6b57">
+    <title>Toy Haven | Find your next favourite</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Toy Haven home">
+    
+          <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="165" height="42">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon">☰</span><span class="close-icon">×</span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" data-page="home" href="index.html">Home</a>
+          <a class="nav-link" data-page="products" href="products.html">Shop</a>
+          <a class="nav-link" data-page="collection" href="collection.html">Collection</a>
+          <a class="nav-link" data-page="support" href="support.html">Contact Us</a>
+          <a class="nav-link cart-link" data-page="cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home-hero" aria-label="Toy Haven promotions">
+        <article class="hero-slide is-active">
+          <img class="hero-slide-visual" src="./assets/images/Toys/Coomon pic for toys.jpg" alt="Colourful wooden building blocks arranged neatly">
+          <div class="container hero-content">
+            <div class="eyebrow hero-kicker">Play starts here</div>
+            <h1>Small things. Big adventures.</h1>
+            <p>Discover clever games, collectible characters and joyful toys that make every playtime memorable.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="products.html">Shop the collection</a>
+              <a class="button button-ghost" href="#categories">Explore categories</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img class="hero-slide-visual" src="./assets/images/background image/background 2.jpg" alt="Moon Base Mission board game setup">
+          <div class="container hero-content">
+            <div class="eyebrow hero-kicker">Game night, upgraded</div>
+            <h1>Bring everyone to the table.</h1>
+            <p>Find cooperative strategy, friendly competition, and engaging board games made for one more round.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="products.html?category=Board%20Games">Browse board games</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img class="hero-slide-visual" src="./assets/images/background image/Background 3.jpg" alt="Classic 1967 Sunset Mustang diecast model">
+          <div class="container hero-content">
+            <div class="eyebrow hero-kicker">For the detail-obsessed</div>
+            <h1>Make room for a classic.</h1>
+            <p>Explore display-worthy diecast cars with opening doors and metal details collectors adore.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="products.html?category=Diecast%20Cars">See diecast cars</a>
+            </div>
+          </div>
+        </article>
+        <div class="hero-dots" role="tablist" aria-label="Promotional slides">
+          <button class="hero-dot is-active" type="button" role="tab" aria-label="Show slide 1" aria-selected="true"></button>
+          <button class="hero-dot" type="button" role="tab" aria-label="Show slide 2" aria-selected="false"></button>
+          <button class="hero-dot" type="button" role="tab" aria-label="Show slide 3" aria-selected="false"></button>
+        </div>
+        <span class="hero-shape" aria-hidden="true"></span>
+      </section>
+
+      <!-- Trust Badges Bar -->
+      <section class="section trust-bar-section">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <span class="trust-icon">🚚</span>
+              <div>
+                <strong>Free Standard Delivery</strong>
+                <p>On all orders over £30 across the UK</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🛡️</span>
+              <div>
+                <strong>Non-Toxic &amp; Safe</strong>
+                <p>Child-safe materials &amp; collector certified</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">❤️</span>
+              <div>
+                <strong>Save Your Favourites</strong>
+                <p>Track your personal shelf in My Collection</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🎓</span>
+              <div>
+                <strong>Student Project Prototype</strong>
+                <p>Full simulation powered by localStorage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">Choose your mood</div>
+              <h2>Browse by category</h2>
+            </div>
+            <a class="button button-ghost" href="products.html">See all products →</a>
+          </div>
+          <div class="category-grid">
+            <a class="category-card reveal" href="products.html?category=Figurines">
+              <img src="./assets/images/figures/Action figure main picture.jpg" alt="Collectible figurines">
+              <h3>Figures</h3>
+              <span class="category-tag">4 items · From £16.00</span>
+            </a>
+            <a class="category-card reveal" href="products.html?category=Toys">
+              <img src="./assets/images/background image/background 1.jpg" alt="Colourful toys">
+              <h3>Toys</h3>
+              <span class="category-tag">4 items · From £18.25</span>
+            </a>
+            <a class="category-card reveal" href="products.html?category=Board%20Games">
+              <img src="assets/images/Boardgames/Boardgames commom pic.jpg" alt="Board game pieces">
+              <h3>Board games</h3>
+              <span class="category-tag">4 items · From £27.50</span>
+            </a>
+            <a class="category-card reveal" href="products.html?category=Diecast%20Cars">
+              <img src="assets/images/diecast cars/common pic  cars.jpg" alt="Diecast model car">
+              <h3>Diecast cars</h3>
+              <span class="category-tag">4 items · From £21.00</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Toys Product Cards Section -->
+      <section class="section" id="trending">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">Handpicked favourites</div>
+              <h2>Trending Toys &amp; Bestsellers</h2>
+            </div>
+            <a class="button button-ghost" href="products.html">View full shop (16 items) →</a>
+          </div>
+          <div id="home-featured-grid" class="product-grid">
+            <!-- Rendered dynamically by home.js with full cards and prices -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Product of the Day Spotlight -->
+      <section class="section">
+        <div class="container">
+          <div id="featured-product" class="featured-panel"></div>
+        </div>
+      </section>
+
+      <section class="section home-cta">
+        <div class="container">
+          <div>
+            <h2>Keep your favourites close.</h2>
+            <p>Save products to your personal collection with the heart icon and come back whenever you're ready.</p>
+          </div>
+          <a class="button button-primary" href="collection.html">View my collection</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="150" height="38">
+          </a>
+          <p class="footer-copy">A cheerful place for collectors, curious minds, and excellent gifts.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="products.html">Shop all products</a></li>
+            <li><a href="collection.html">My collection &amp; wishlist</a></li>
+            <li><a href="cart.html">Shopping cart</a></li>
+            <li><a href="support.html">Feedback &amp; support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Get occasional good stuff</h2>
+          <p class="footer-copy">New arrivals, toy stories, and gift ideas. No spam.</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-home">Email address</label>
+            <input id="newsletter-home" type="email" placeholder="you@example.com" required>
+            <button class="button button-secondary" type="submit">Join</button>
+          </form>
+          <p class="form-message" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Toy Haven</span>
+        <span>Play.Explore.Discover.</span>
+      </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="product-modal" class="modal-backdrop" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="icon-button modal-close" type="button" aria-label="Close quick view">×</button>
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Checkout securely with Toy Haven - Student Project Simulation.">
+    <meta name="theme-color" content="#ff6b57">
+    <title>Checkout | Toy Haven</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/checkout.css">
+  </head>
+  <body data-page="checkout">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Toy Haven home">
+          <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="165" height="42">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon">☰</span><span class="close-icon">×</span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" data-page="home" href="index.html">Home</a>
+          <a class="nav-link" data-page="products" href="products.html">Shop</a>
+          <a class="nav-link" data-page="collection" href="collection.html">Collection</a>
+          <a class="nav-link" data-page="support" href="support.html">Contact Us</a>
+          <a class="nav-link cart-link" data-page="cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">Simulated checkout</div>
+          <h1>Fast, easy checkout.</h1>
+          <p>Complete your simulated student order. No real payment or credit card is charged.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Empty Cart Notice -->
+          <div id="checkout-empty" class="empty-state" hidden>
+            <div style="font-size: 3rem; margin-bottom: 0.8rem;">📦</div>
+            <h2>Nothing to check out yet</h2>
+            <p>Your shopping cart is currently empty. Find your next favourite toy in the shop!</p>
+            <a class="button button-primary" href="products.html" style="margin-top: 1rem;">Browse the catalogue</a>
+          </div>
+
+          <div class="checkout-layout" id="checkout-layout">
+            <!-- Checkout Form Card -->
+            <div class="checkout-form-card" id="checkout-form-card">
+              <h2>Delivery &amp; Payment Details</h2>
+              
+              <form id="checkout-form" class="checkout-form" novalidate>
+                <!-- Personal Info -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="full-name">Full name <span class="required">*</span></label>
+                    <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Alex Morgan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-email">Email address <span class="required">*</span></label>
+                    <input id="checkout-email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+44 7123 456789">
+                  </div>
+                  <div class="form-group">
+                    <label for="postcode">Postal code <span class="required">*</span></label>
+                    <input id="postcode" name="postcode" type="text" autocomplete="postal-code" placeholder="e.g. SW1A 1AA" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Delivery address <span class="required">*</span></label>
+                  <textarea id="address" name="address" autocomplete="street-address" placeholder="Flat number, house name, street, town/city" rows="3" required></textarea>
+                </div>
+
+                <!-- Delivery Speed -->
+                <div class="form-group">
+                  <label>Delivery Method</label>
+                  <div class="delivery-options-grid">
+                    <label class="delivery-radio-card">
+                      <input type="radio" name="deliverySpeed" value="standard" checked>
+                      <div>
+                        <strong>Standard Tracked (3–5 working days)</strong>
+                        <span id="radio-standard-price">Free / £3.99</span>
+                      </div>
+                    </label>
+                    <label class="delivery-radio-card">
+                      <input type="radio" name="deliverySpeed" value="express">
+                      <div>
+                        <strong>Express Courier (1–2 working days)</strong>
+                        <span>£5.99</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Payment Method -->
+                <fieldset class="form-group" style="border: 0; padding: 0;">
+                  <legend style="font-weight: 700; margin-bottom: 0.5rem;">Payment Method (Simulated)</legend>
+                  <div class="payment-options">
+                    <label class="payment-option">
+                      <input type="radio" name="payment" value="Card" checked>
+                      <span>💳 Credit / Debit Card</span>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="payment" value="Cash on Delivery">
+                      <span>💵 Cash on Delivery</span>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="payment" value="Student Pay">
+                      <span>🎓 Student Campus Pay</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <!-- Simulated Card Fields -->
+                <div id="card-fields" class="card-simulation-box">
+                  <div class="form-group">
+                    <label for="card-num">Card number</label>
+                    <input id="card-num" type="text" placeholder="4532 •••• •••• 8910" value="4532 8901 2345 6789">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="card-exp">Expiry date</label>
+                      <input id="card-exp" type="text" placeholder="MM/YY" value="12/28">
+                    </div>
+                    <div class="form-group">
+                      <label for="card-cvc">CVC code</label>
+                      <input id="card-cvc" type="text" placeholder="123" value="789">
+                    </div>
+                  </div>
+                </div>
+
+                <button class="button button-primary button-full" type="submit" style="margin-top: 1rem;">
+                  Place simulated order →
+                </button>
+                <p id="checkout-message" class="form-message" aria-live="polite"></p>
+              </form>
+
+              <!-- Order Success Screen -->
+              <div id="checkout-success" class="success-panel" hidden>
+                <div class="success-icon">✓</div>
+                <h2>Order Confirmed!</h2>
+                <p class="success-intro">Thank you for your simulated order! A confirmation email has been logged to localStorage.</p>
+                
+                <div class="order-receipt-card">
+                  <div class="receipt-header">
+                    <div>
+                      <span class="receipt-label">Order Number</span>
+                      <strong id="success-order-number" class="receipt-order-id">TH-000000</strong>
+                    </div>
+                    <div>
+                      <span class="receipt-label">Estimated Delivery</span>
+                      <strong id="success-delivery-date">In 3 working days</strong>
+                    </div>
+                  </div>
+                  
+                  <div class="receipt-divider"></div>
+                  
+                  <div class="receipt-details">
+                    <p><strong>Deliver To:</strong> <span id="success-customer-name"></span></p>
+                    <p><strong>Address:</strong> <span id="success-customer-address"></span></p>
+                    <p><strong>Payment:</strong> <span id="success-payment-method"></span></p>
+                    <p><strong>Total Paid:</strong> <strong id="success-total" style="color: var(--coral-dark);"></strong></p>
+                  </div>
+                </div>
+
+                <div class="success-actions">
+                  <button class="button button-primary" type="button" onclick="window.print()">
+                    🖨️ Print receipt
+                  </button>
+                  <a class="button button-ghost" href="products.html">
+                    Continue shopping
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Summary Card -->
+            <aside id="order-card" class="order-card">
+              <h2>Order Summary</h2>
+              <div id="order-list" class="order-list"></div>
+              
+              <div class="order-cost-breakdown">
+                <div class="breakdown-row">
+                  <span>Subtotal</span>
+                  <span id="order-subtotal">£0.00</span>
+                </div>
+                <div class="breakdown-row">
+                  <span>Delivery</span>
+                  <span id="order-delivery">£0.00</span>
+                </div>
+                <div class="breakdown-row" id="order-discount-row" hidden>
+                  <span>Student Discount</span>
+                  <span id="order-discount" style="color: #10b981;">-£0.00</span>
+                </div>
+                <div class="breakdown-row checkout-total">
+                  <span>Grand Total</span>
+                  <strong id="checkout-total">£0.00</strong>
+                </div>
+              </div>
+
+              <div class="order-guarantee-note">
+                🔒 Safe simulation. Built for COMP40053 Assignment 3.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="150" height="38">
+          </a>
+          <p class="footer-copy">A cheerful place for collectors, curious minds, and excellent gifts.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="products.html">Shop all</a></li>
+            <li><a href="collection.html">My collection</a></li>
+            <li><a href="cart.html">Shopping cart</a></li>
+            <li><a href="support.html">Feedback &amp; support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Get occasional good stuff</h2>
+          <p class="footer-copy">New arrivals and gift ideas. No clutter.</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-checkout">Email address</label>
+            <input id="newsletter-checkout" type="email" placeholder="you@example.com" required>
+            <button class="button button-secondary" type="submit">Join</button>
+          </form>
+          <p class="form-message" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Toy Haven · Student Project Prototype</span>
+        <span>Built for COMP40053 Assignment 3</span>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

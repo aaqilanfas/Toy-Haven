@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review your Toy Haven shopping cart, check delivery, and apply student discounts.">
+    <meta name="theme-color" content="#ff6b57">
+    <title>Your Cart | Toy Haven</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Toy Haven home">
+          <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="165" height="42">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon">☰</span><span class="close-icon">×</span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" data-page="home" href="index.html">Home</a>
+          <a class="nav-link" data-page="products" href="products.html">Shop</a>
+          <a class="nav-link" data-page="collection" href="collection.html">Collection</a>
+          <a class="nav-link" data-page="support" href="support.html">Contact Us</a>
+          <a class="nav-link cart-link" data-page="cart" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">Your shopping cart</div>
+          <h1>Review your toy picks.</h1>
+          <p>Adjust item quantities, apply student promo codes, and proceed to checkout when ready.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Free delivery progress bar -->
+          <div id="delivery-banner" class="delivery-banner" hidden>
+            <div class="delivery-banner-text" id="delivery-banner-text">🚚 Add £30.00 more to qualify for Free Delivery</div>
+            <div class="progress-bar-track">
+              <div id="delivery-progress-fill" class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Empty Cart State -->
+          <div id="cart-empty" class="empty-state" hidden>
+            <div class="empty-icon" style="font-size: 3rem; margin-bottom: 0.8rem;">🛒</div>
+            <h2>Your cart is currently empty</h2>
+            <p>You haven't added any toys to your cart yet. Explore our vibrant collection of figurines, games, toys and diecast cars!</p>
+            <a class="button button-primary" href="products.html" style="margin-top: 1rem;">Explore the shop</a>
+          </div>
+
+          <!-- Cart Layout -->
+          <div class="cart-layout" id="cart-layout-container">
+            <div id="cart-items" class="cart-items">
+              <!-- Rendered dynamically by cart.js -->
+            </div>
+
+            <aside id="cart-summary" class="summary-card">
+              <h2>Order Summary</h2>
+              
+              <div class="summary-row">
+                <span>Subtotal (<span id="cart-items-count">0</span> items)</span>
+                <strong id="cart-subtotal">£0.00</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Delivery</span>
+                <span id="cart-delivery">Free</span>
+              </div>
+
+              <div class="summary-row" id="discount-row" hidden>
+                <span>Student Discount (10%)</span>
+                <strong id="cart-discount" style="color: #10b981;">-£0.00</strong>
+              </div>
+
+              <!-- Promo Code Input -->
+              <div class="promo-box">
+                <label for="promo-input" class="sr-only">Promo or Student code</label>
+                <div class="promo-input-wrap">
+                  <input id="promo-input" type="text" placeholder="Promo code (e.g. STUDENT10)" uppercase>
+                  <button id="apply-promo-btn" class="button button-secondary button-small" type="button">Apply</button>
+                </div>
+                <p id="promo-message" class="form-message" aria-live="polite"></p>
+              </div>
+
+              <div class="summary-row total">
+                <span>Total</span>
+                <strong id="cart-total">£0.00</strong>
+              </div>
+
+              <div class="cart-cta-actions">
+                <a class="button button-primary button-full" href="checkout.html">
+                  Proceed to checkout →
+                </a>
+                <div class="cart-sub-actions">
+                  <a class="button button-ghost button-small" href="products.html">Continue shopping</a>
+                  <button id="clear-cart" class="button button-ghost button-small" type="button">Clear cart</button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img class="brand-logo-img" src="assets/logo.svg" alt="Toy Haven Logo" width="150" height="38">
+          </a>
+          <p class="footer-copy">A cheerful place for collectors, curious minds, and excellent gifts.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop all</a></li>
+            <li><a href="collection.html">My collection</a></li>
+            <li><a href="support.html">Feedback &amp; support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Get occasional good stuff</h2>
+          <p class="footer-copy">New arrivals and gift ideas. No clutter.</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-cart">Email address</label>
+            <input id="newsletter-cart" type="email" placeholder="you@example.com" required>
+            <button class="button button-secondary" type="submit">Join</button>
+          </form>
+          <p class="form-message" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Toy Haven · Student Project Prototype</span>
+        <span>Built for COMP40053 Assignment 3</span>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
